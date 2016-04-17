@@ -33,7 +33,7 @@ typedef struct Node
 
 // ===================== Insert a node ===================
 
-Node* insert (int val)
+Node* create(int val)
 {
   Node* temp;
   temp = (Node*) malloc(sizeof(Node));
@@ -134,12 +134,12 @@ int main ()
   root->left->left->left = create(3);
   root->left->left->right = create(42);
   root->left->right->right = create(21);
-  root->right->left->left = crete (2);
+  root->right->left->left = create (2);
   root->right->left->right = create (55);
   root->right->right->left = create (4);
   root->right->right->right = create (12);
 
-  //Traversals:
+  //Traversals
   printf("\n Depth first: \n ");
   printf("\n In order Traversal: \n");
   inorder(root);
