@@ -1,0 +1,30 @@
+{
+	"name": "Pipeline Repro_Sproc_PRob",
+	"properties": {
+		"activities": [
+			{
+				"name": "SQL pool stored procedure1",
+				"type": "SqlPoolStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "3.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"sqlPool": {
+					"referenceName": "sochat_dedPool",
+					"type": "SqlPoolReference"
+				},
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[random1]"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2021-04-07T23:19:41Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

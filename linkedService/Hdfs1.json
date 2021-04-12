@@ -1,0 +1,12 @@
+{
+	"name": "Hdfs1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Hdfs",
+		"typeProperties": {
+			"url": "fdgfgfggbfdgfdgghg",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
